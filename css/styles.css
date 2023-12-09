@@ -56,3 +56,32 @@ body {
   font-weight: 500;
   line-height: 1.5;
 }
+
+
+.favorites {
+   
+   
+  padding: 120px 0 101px 0;
+}
+.favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 8px ;
+  list-style: none;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.favorites .favorites-item {
+  width: calc((100% - 48px) / 3);
+  
+}
+.favorites-gamburger {
+border-top-right: 158px;
+border-radius: 157.5px;
+background: url(<path-to-image>), lightgray -6.278px -11.619px / 104.636% 105.384% no-repeat;
+padding-top: 41;
+padding-right: 40;
+padding-bottom: 41;
+padding-left: 40;  
+}
