@@ -55,4 +55,6 @@ body {
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
+  border: none;
+  cursor: pointer;
 }
