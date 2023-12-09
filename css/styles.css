@@ -63,7 +63,7 @@ body {
 .favorites {
    
    
-  padding: 120px 0 101px 0;
+  padding: 120px 0 101px 32;
 }
 .benefits {
   display: flex;
@@ -133,4 +133,9 @@ flex-shrink: 0;
   padding-bottom: 41;
   padding-left: 40;
   flex-shrink: 0;       
+}
+.container-fav{
+  width: 1280px;
+  padding: 41 40 41 40px;
+  margin: 0 auto;  
 }
