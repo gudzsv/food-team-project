@@ -59,31 +59,78 @@ body {
   cursor: pointer;
 }
 
-
+/* Favorites Sergiy M */
 .favorites {
    
    
   padding: 120px 0 101px 0;
 }
-.favorites {
+.benefits {
   display: flex;
-  flex-wrap: wrap;
+  flex: wrap;
   gap: 16px;
   margin-bottom: 8px ;
   list-style: none;
   column-gap: 24px;
   row-gap: 48px;
+  margin: auto;
 }
-.favorites .favorites-item {
+.benefits-four .favorites-item {
   width: calc((100% - 48px) / 3);
   
 }
 .favorites-gamburger {
-border-top-right: 158px;
+border-top-right-radius:158px;
 border-radius: 157.5px;
 background: url(<path-to-image>), lightgray -6.278px -11.619px / 104.636% 105.384% no-repeat;
 padding-top: 41;
 padding-right: 40;
 padding-bottom: 41;
-padding-left: 40;  
+padding-left: 40;
+flex-shrink: 0;  
+}
+.favorites-pasta {
+  border-radius: 157.5px;
+background: url(<path-to-image>), lightgray -2.481px -1px / 101.575% 100.635% no-repeat;
+flex-shrink: 0;
+padding-top: 41;
+padding-right: 40;
+padding-bottom: 41;
+padding-left: 39; 
+}
+.favorites-pizza {
+  border-radius: 157.5px;
+  background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
+  padding-top: 41;
+padding-right: 40;
+padding-bottom: 41;
+padding-left: 40;
+flex-shrink: 0;    
+}
+.favorites-chicken {
+  border-radius: 157.5px;
+  background: url(<path-to-image>), lightgray -52.771px -50.365px / 131.959% 131.959% no-repeat;
+  padding-top: 41;
+padding-right: 40;
+padding-bottom: 41;
+padding-left: 40;
+flex-shrink: 0;    
+}
+.favorites-salad {
+  border-radius: 246.5px;
+  background: url(<path-to-image>), lightgray -26.536px 4.825px / 106.958% 106.163% no-repeat;
+  flex-shrink: 0;
+  padding-top: 41;
+  padding-right: 40;
+  padding-bottom: 41;
+  padding-left: 39;   
+}
+.favorites-borshch {
+  border-radius: 157.5px;
+  background: url(<path-to-image>), lightgray -6.278px -11.619px / 104.636% 105.384% no-repeat;
+  padding-top: 41;
+  padding-right: 40;
+  padding-bottom: 41;
+  padding-left: 40;
+  flex-shrink: 0;       
 }
