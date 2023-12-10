@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Food delivery service</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,6 +41,52 @@
       <!-- Subscribe  Anna T-->
     </main>
     <!-- Footer Katia-->
-    <!-- Modal -->
+
+    <!-- Modal Serhii Hudzenko-->
+    <div class="modal">
+      <div class="modal-wrapper">
+        <button class="close-button" aria-label="Model close button">
+          <svg class="close-button-icon">
+            <use href="./img/icons.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <div class="modal-container">
+          <p class="title">Order Form</p>
+          <form class="modal-form" action="/index.html" method="post">
+            <label class="label" for="user-name">Name</label>
+            <input
+              class="input"
+              type="text"
+              id="user-name"
+              class="name-input"
+              name="user-name"
+              placeholder="Your name"
+              required
+            />
+            <label class="label" for="user-phone">Phone number</label>
+            <input
+              class="input"
+              type="tel"
+              id="user-phone"
+              class="phone-input"
+              name="user-phone"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              required
+            />
+            <label class="label" for="user-email">E-mail</label>
+            <input
+              class="input"
+              type="email"
+              id="user-email"
+              class="email-input"
+              name="user-email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <button class="buttn-sent" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
