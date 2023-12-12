@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- Header Nelli-->
@@ -31,7 +32,7 @@
           enjoy a hassle-free and delicious meal from the comfort of your own
           home.
         </p>
-        <button class="button">Order Now</button
+        <button type="button" class="button" data-open-modal>Order Now</button
         ><img src="./img/hero.png" alt="salad" width="528" height="528" />
       </section>
 
@@ -43,9 +44,13 @@
     <!-- Footer Katia-->
 
     <!-- Modal Serhii Hudzenko-->
-    <div class="modal">
-      <div class="modal-wrapper">
-        <button class="close-button" aria-label="Model close button">
+    <div class="backdrop" data-backdrop>
+      <div class="modal">
+        <button
+          class="close-button"
+          aria-label="Model close button"
+          data-close-modal
+        >
           <svg class="close-button-icon">
             <use href="./img/icons.svg#icon-close-button"></use>
           </svg>
