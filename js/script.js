@@ -1,6 +1,6 @@
 const refs = {
-  openModalHeaderBtn: document.querySelector('[data-open-modal-header]'),
-  openModalHeroBtn: document.querySelector('[data-open-modal-hero]'),
+  openModalHeaderBtn: document.querySelector('[data-open-order-header]'),
+  openModalHeroBtn: document.querySelector('[data-open-order-hero]'),
   closeModalBtn: document.querySelector('[data-close-modal]'),
   backdrop: document.querySelector('[data-backdrop]'),
 };
