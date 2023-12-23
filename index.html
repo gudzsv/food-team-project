@@ -3,36 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/svg" />
     <title>Food delivery service</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header Nelli-->
+    <header class="header">
+      <div class="header-container">
+        <nav class="header-nav">
+          <a class="header-logo" href="./index.html">
+            <svg class="" width="66" height="52">
+              <use href="./img/icons.svg#icon-big-logo"></use>
+            </svg>
+          </a>
+          <ul class="header-menu">
+            <li><a class="header-link" href="./index.html">Home</a></li>
+            <li><a class="header-link" href="">About</a></li>
+            <li><a class="header-link" href="">Service</a></li>
+            <li><a class="header-link" href="">Menu</a></li>
+            <li><a class="header-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="button" type="button">Order Now</button>
+      </div>
+    </header>
     <main>
       <!-- Hero Inna-->
+
       <section class="hero">
+
+        <div class="container container-hero">
+          <div class="hero-content">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="button hero-button">Order Now</button>
+          </div>
+
+          <img
+            class="hero-img"
+            src="./img/hero.png"
+            alt="salad"
+            width="528"
+            height="528"
+          />
+        </div>
+
         <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
         <p class="hero-text">
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
+          With just a few clicks, you can have your favorite meals delivered straight to your
+          doorstep, no matter where you are. Order now and enjoy a hassle-free and delicious meal
+          from the comfort of your own home.
         </p>
-        <button class="button">Order Now</button
+        <button type="button" class="button" data-open-modal>Order Now</button
         ><img src="./img/hero.png" alt="salad" width="528" height="528" />
+
       </section>
 
       <!-- Offerings Anna L-->
@@ -117,13 +158,17 @@
 
       <!-- Customers  Oleksandr-->
       <!-- Subscribe  Anna T-->
+
+     <!-- Footer Katia-->
+    <!-- Modal -->
+
     </main>
     <!-- Footer Katia-->
 
     <!-- Modal Serhii Hudzenko-->
-    <div class="modal">
-      <div class="modal-wrapper">
-        <button class="close-button" aria-label="Model close button">
+    <div class="backdrop" data-backdrop>
+      <div class="modal">
+        <button class="close-button" aria-label="Model close button" data-close-modal>
           <svg class="close-button-icon">
             <use href="./img/icons.svg#icon-close-button"></use>
           </svg>
@@ -139,8 +184,7 @@
               class="name-input"
               name="user-name"
               placeholder="Your name"
-              required
-            />
+              required />
             <label class="label" for="user-phone">Phone number</label>
             <input
               class="input"
@@ -149,8 +193,7 @@
               class="phone-input"
               name="user-phone"
               placeholder="+38(0_ _) _ _ _   _ _   _ _"
-              required
-            />
+              required />
             <label class="label" for="user-email">E-mail</label>
             <input
               class="input"
@@ -159,12 +202,13 @@
               class="email-input"
               name="user-email"
               placeholder="example@gmail.com"
-              required
-            />
+              required />
             <button class="buttn-sent" type="submit">Send</button>
           </form>
         </div>
       </div>
     </div>
+    <script src="./js/script.js" defer></script>
+
   </body>
 </html>
