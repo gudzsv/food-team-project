@@ -119,7 +119,6 @@ body {
   }
 }
 
-
 .button {
   height: 32px;
   min-width: 98px;
@@ -136,31 +135,31 @@ body {
 
 /* Favorites Sergiy M */
 .favorites {
-  /* display: block; 
-  width: 1280px;  
+  /* display: block;
+  width: 1280px;
   padding: 120px 0 101px 32;
   margin: auto; */
 }
-  .favorites-title{
-    text-align: center;
-    /* width: 656px;
+.favorites-title {
+  text-align: center;
+  /* width: 656px;
     height: 49px; */
-    /* flex-shrink: 0; */
-  }
-  .favorites-text { 
-    text-align: center;
-    /* width: 656px;
+  /* flex-shrink: 0; */
+}
+.favorites-text {
+  text-align: center;
+  /* width: 656px;
     height: 18px;
     flex-shrink: 0;
     margin-bottom: 81px; */
-}  
+}
 
 .benefits {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
-  margin-bottom: 8px ;
+  margin-bottom: 8px;
   list-style: none;
   /* column-gap: 24px; */
   /* row-gap: 48px; */
@@ -169,61 +168,47 @@ body {
 }
 .benefits .favorites-item {
   width: calc((100% - 32px * 2) / 3);
-  
 }
 
 .favorites-gamburger {
   border-radius: 164.5px;
   /* background: url(<path-to-image>), lightgray 1.915px -5.745px / 96.294% 96.353% no-repeat; */
   /* width: 315px; */
- 
-flex-shrink: 0;
-padding: 81 40 41 40px  
+
+  flex-shrink: 0;
+  padding: 81 40 41 40px;
 }
 .favorites-pasta {
   border-radius: 157.5px;
-background: url(<path-to-image>), lightgray -2.481px -1px / 101.575% 100.635% no-repeat;
-flex-shrink: 0;
-padding:  81 40 41 39px
+  background: url(<path-to-image>), lightgray -2.481px -1px / 101.575% 100.635% no-repeat;
+  flex-shrink: 0;
+  padding: 81 40 41 39px;
 }
 .favorites-pizza {
   border-radius: 157.5px;
   background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
-  padding: 81 40 41 40px; 
-flex-shrink: 0;    
+  padding: 81 40 41 40px;
+  flex-shrink: 0;
 }
 .favorites-chicken {
   border-radius: 157.5px;
   background: url(<path-to-image>), lightgray -52.771px -50.365px / 131.959% 131.959% no-repeat;
-  padding: 41 40 41 40px; 
-flex-shrink: 0;    
+  padding: 41 40 41 40px;
+  flex-shrink: 0;
 }
 .favorites-salad {
   border-radius: 246.5px;
   background: url(<path-to-image>), lightgray -26.536px 4.825px / 106.958% 106.163% no-repeat;
   flex-shrink: 0;
-  padding: 41 40 41 39px  
+  padding: 41 40 41 39px;
 }
-.favorites-borshch {
-  /* border-radius: 157.5px;
-  background: url(<path-to-image>), lightgray -6.278px -11.619px / 104.636% 105.384% no-repeat;
-  padding: 41 40 41 40px; 
-  margin: 0 auto;       */
-}
-.container-fav
-{
-  
 
-flex-shrink: 0;
+.container-fav {
+  flex-shrink: 0;
   padding: 41 40 41 40px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
-/* .favorites-item {
-  width: 315;
-} */
 
-.hero {
-}
 .hero-button {
   display: block;
   margin-right: auto;
@@ -487,4 +472,3 @@ flex-shrink: 0;
     top: 129px;
   }
 }
-
