@@ -8,7 +8,6 @@ const refs = {
 refs.openModalHeaderBtn.addEventListener('click', toogleModal);
 refs.openModalHeroBtn.addEventListener('click', toogleModal);
 refs.closeModalBtn.addEventListener('click', toogleModal);
-refs.closeModalBtn.addEventListener('click', toogleModal);
 
 function toogleModal() {
   refs.backdrop.classList.toggle('is-open');
