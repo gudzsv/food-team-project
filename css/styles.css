@@ -58,3 +58,41 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.hero {
+}
+.hero-button {
+  display: block;
+  margin-right: auto;
+}
+.container-hero {
+  background: #fefefe;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+.hero-title {
+  width: 502.417px;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.hero-text {
+  width: 511px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  margin-right: 143px;
+}
+.hero-img {
+  width: 580px;
+  height: 580px;
+  flex-shrink: 0;
+  border-radius: 580px;
+  border: 26px solid #ffe550;
+  background-color: #fefefe;
+  margin: 14px 0;
+}
