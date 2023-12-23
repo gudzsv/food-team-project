@@ -231,7 +231,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-
+}
 /* Serhii Hudzenko */
 /* #### Modal #### */
 /* # 10.12.2023  # */
@@ -395,5 +395,5 @@ body {
 @media screen and (min-width: 1280px) {
   .modal {
     top: 129px;
-
+  }
 }
