@@ -37,7 +37,7 @@ address {
 
 body {
   color: #2c2c2c;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .visually-hidden {
@@ -61,6 +61,51 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+
+/* --- Header begin - Nelli */
+.header {
+  background: #fefefe;
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+}
+.header-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 16px;
+}
+.header-container,
+.header-nav,
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  flex-basis: 100%;
+  margin-right: 30px;
+}
+.header-menu {
+  gap: 28px;
+}
+.header-logo {
+  margin-right: auto;
+}
+.header-link {
+  font-size: 14px;
+  line-height: 1.14;
+  color: currentColor;
+  display: block;
+  padding: 28px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration-line 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link:hover,
+.header-link:focus {
+  font-weight: 700;
+  color: #bbf330;
+  text-decoration-line: underline;
+}
+/* --- Header end --- */
+
 /* Tablet */
 @media screen and (min-width: 736px) {
   .container {
