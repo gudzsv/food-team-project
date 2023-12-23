@@ -1,13 +1,12 @@
 const refs = {
-  openModalBtn: document.querySelector('[data-open-modal]'),
+  openModalHeaderBtn: document.querySelector('[data-open-order-header]'),
+  openModalHeroBtn: document.querySelector('[data-open-order-hero]'),
   closeModalBtn: document.querySelector('[data-close-modal]'),
   backdrop: document.querySelector('[data-backdrop]'),
 };
 
-refs.openModalBtn.addEventListener('click', toogleModal);
-refs.closeModalBtn.addEventListener('click', toogleModal);
-
-refs.openModalBtn.addEventListener('click', toogleModal);
+refs.openModalHeaderBtn.addEventListener('click', toogleModal);
+refs.openModalHeroBtn.addEventListener('click', toogleModal);
 refs.closeModalBtn.addEventListener('click', toogleModal);
 
 function toogleModal() {
