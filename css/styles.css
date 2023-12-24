@@ -231,6 +231,10 @@ body {
   background: #fefefe;
   display: flex;
   align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: relative;
+  z-index: -1;
 }
 .hero-content {
   display: flex;
@@ -256,7 +260,7 @@ body {
   border-radius: 580px;
   border: 26px solid #ffe550;
   background-color: #fefefe;
-  margin: 14px 0;
+  /*margin: 14px 0;*/
 }
 
 .special-offer-section {
