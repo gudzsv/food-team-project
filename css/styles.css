@@ -223,9 +223,9 @@ body {
   margin: 0 auto;
 }
 
-.hero-button {
-  display: block;
-  margin-right: auto;
+.hero {
+  margin-top: 24px;
+  margin-bottom: 55px;
 }
 .container-hero {
   background: #fefefe;
@@ -233,9 +233,8 @@ body {
   align-items: center;
   padding-top: 14px;
   padding-bottom: 14px;
-  position: relative;
-  z-index: -1;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -246,13 +245,17 @@ body {
   line-height: 1.2;
   margin-bottom: 28px;
 }
-
 .hero-text {
   width: 511px;
   line-height: 1.5;
   margin-bottom: 40px;
   margin-right: 143px;
 }
+.hero .hero-button {
+  display: block;
+  margin-right: auto;
+}
+
 .hero-img {
   width: 580px;
   height: 580px;
