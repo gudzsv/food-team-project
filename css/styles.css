@@ -221,7 +221,7 @@ body {
   padding: 41 40 41 40px;
   margin: 0 auto;
 }
-
+/**********  H E R O *******/
 .hero {
   margin-top: 14px;
   margin-bottom: 69px;
@@ -235,6 +235,7 @@ body {
 
 .hero-content {
   width: 511px;
+  p
 }
 
 .hero-title {
@@ -255,6 +256,7 @@ body {
   border-radius: 580px;
   border: 26px solid #ffe550;
   background-color: #fefefe;
+  margin-right: 14px;
 }
 
 .special-offer-section {
