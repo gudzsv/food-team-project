@@ -138,19 +138,18 @@ body {
   }
 }
 
-.button {
+/*.button {
   height: 32px;
   min-width: 98px;
   border-radius: 30px;
   background-color: #bbf330;
-
   color: #2c2c2c;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
   border: none;
   cursor: pointer;
-}
+}*/
 
 /* Favorites Sergiy M */
 
@@ -224,46 +223,38 @@ body {
 }
 
 .hero {
-  margin-top: 24px;
-  margin-bottom: 55px;
+  margin-top: 14px;
+  margin-bottom: 69px;
 }
 .container-hero {
   background: #fefefe;
   display: flex;
   align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  justify-content: space-between;
 }
 
 .hero-content {
-  display: flex;
-  flex-direction: column;
+  width: 511px;
 }
+
 .hero-title {
-  width: 502.417px;
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 28px;
 }
 .hero-text {
-  width: 511px;
   line-height: 1.5;
   margin-bottom: 40px;
-  margin-right: 143px;
 }
-.hero .hero-button {
-  display: block;
-  margin-right: auto;
+.hero-button {
+  margin-left: 0;
 }
 
 .hero-img {
-  width: 580px;
-  height: 580px;
   flex-shrink: 0;
   border-radius: 580px;
   border: 26px solid #ffe550;
   background-color: #fefefe;
-  /*margin: 14px 0;*/
 }
 
 .special-offer-section {
