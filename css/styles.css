@@ -57,9 +57,21 @@ body {
 }
 
 .container {
-  width: 320px;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
+}
+/* Tablet */
+@media screen and (min-width: 736px) {
+  .container {
+    max-width: 736px;
+  }
+}
+/* Desctop */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 /* --- Header begin - Nelli */
@@ -67,11 +79,6 @@ body {
 .header {
   background: #fefefe;
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
-}
-.header-container {
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 16px;
 }
 .header-container,
 .header-nav,
@@ -124,19 +131,6 @@ body {
   text-decoration-line: underline;
 }
 /* --- Header end --- */
-
-/* Tablet */
-@media screen and (min-width: 736px) {
-  .container {
-    width: 736px;
-  }
-}
-/* Desctop */
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-}
 
 /*.button {
   height: 32px;
