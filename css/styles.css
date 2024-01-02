@@ -38,6 +38,24 @@ address {
 body {
   color: #2c2c2c;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Властивості для заголовків */
+
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .visually-hidden {
@@ -252,17 +270,18 @@ body {
   margin-right: 14px;
 }
 
-.special-offer-section {
+/* .special-offer-section {
   display: flex;
   justify-content: center;
   background: var(--White, #fefefe);
-}
+} */
+*/
 
-.special-offer {
+/* .special-offer {
   display: block;
-}
+} */
 
-.offer-title {
+/* .offer-title {
   min-width: 656px;
   height: 50px;
   color: var(--Black, #2c2c2c);
@@ -270,11 +289,11 @@ body {
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 50.4px */
+  line-height: 120%; /* 50.4px
   margin-bottom: 20px;
-}
+} */
 
-.offer-text {
+/* .offer-text {
   width: 532px;
   height: 48px;
   margin-bottom: 36px;
@@ -284,7 +303,104 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+/* } */ */
+
+/**********  O F F E R I N G S *******/
+
+.offerings {
+  background-color: #ffe550;
+  margin-bottom: 120px;
 }
+
+.container-offerings {
+  display: flex;
+  background-color: #ffe550;
+  gap: 90px;
+  padding: 167px 51px 124px 16px;
+  margin: 0 auto 120px;
+}
+
+.offer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 550px;
+  flex-shrink: 0;
+  border-radius: 550px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.offer-img-bg {
+  position: relative;
+  width: 502px;
+  height: 502px;
+  flex-shrink: 0;
+  border-radius: 502px;
+  background-color: #fefefe;
+}
+
+.offer-img-apple {
+  position: absolute;
+  left: 60px;
+  top: -78px;
+}
+
+.offer-content {
+  padding-top: 29px;
+}
+.offer-title {
+  margin-bottom: 20px;
+}
+
+.offer-text {
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.offer-all-items {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 32px;
+}
+
+.offer-item {
+  width: 253px;
+}
+
+.offer-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #fefefe;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.offer-icon {
+}
+
+.offer-item-title {
+  margin-bottom: 16px;
+}
+
+.offer-item-text {
+  font-size: 14px;
+}
+
+.offer-btn {
+  display: inline-flex;
+  padding: 10px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 2px solid #7eb101;
+  background-color: #fff;
+}
+
+/**********  O F F E R I N G S - E N D *******/
 
 .form-button {
   display: flex;
