@@ -98,22 +98,11 @@ h3 {
   background: #fefefe;
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
 }
-.header-container,
-.header-nav,
 .header-menu {
-  display: flex;
-  align-items: center;
-}
-.header-nav {
-  flex-basis: 100%;
-}
-.header-menu {
-  gap: 28px;
-}
-.header-logo {
-  margin-right: auto;
+  display: none;
 }
 .header-btn {
+  display: none;
   height: 32px;
   min-width: 98px;
   padding: 6px 18px;
@@ -132,6 +121,27 @@ h3 {
 .header-btn:focus {
   background-color: #ffe450;
 }
+@media screen and (min-width: 736px) {
+  .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .header-btn {
+    display: block;
+  }
+}
+.header-container,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  flex-basis: 100%;
+}
+.header-logo {
+  margin-right: auto;
+}
 .header-link {
   font-size: 14px;
   line-height: 1.14;
@@ -147,6 +157,73 @@ h3 {
   font-weight: 700;
   color: #bbf330;
   text-decoration-line: underline;
+}
+.burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+  cursor: pointer;
+  color: #7eb101;
+  background-color: transparent;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.burger-btn:hover,
+.burger-btn:focus {
+  color: #ffe550;
+}
+.burger-btn-icon {
+  fill: currentColor;
+  max-width: 28px;
+}
+@media screen and (min-width: 736px) {
+  .burger-btn {
+    display: none;
+  }
+}
+.mobile-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 170px;
+  height: 311px;
+  background-color: #bbf330;
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+.mobile-menu-link {
+  display: block;
+  padding: 16px;
+  color: #000;
+}
+.mobile-menu-link.active {
+  font-weight: 700;
+}
+.modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: currentColor;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.modal-btn-icon {
+  color: currentColor;
+  max-width: 24px;
 }
 /* --- Header end --- */
 
@@ -592,81 +669,81 @@ h3 {
     top: 129px;
   }
 }
-.favorites-gamburger{
+.favorites-gamburger {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-gamburger:hover,
 .favorites-gamburger:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-pasta{
+.favorites-pasta {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-pasta:hover,
 .favorites-gamburger:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-pizza{
+.favorites-pizza {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-pizza:hover,
 .favorites-pizza:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-chicken{
+.favorites-chicken {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-chicken:hover,
 .favorites-chicken:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-salad{
+.favorites-salad {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-salad:hover,
 .favorites-salad:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-borshch{
+.favorites-borshch {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-borshch:hover,
 .favorites-borshch:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
