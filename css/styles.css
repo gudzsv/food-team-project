@@ -1,4 +1,8 @@
 /* Стилі для обнулення верхніх відступів у елементів */
+.hide {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -80,9 +84,9 @@ h3 {
   margin: 0 auto;
 }
 /* Tablet */
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
   }
 }
 /* Desctop */
@@ -250,42 +254,234 @@ h3 {
 /**********  H E R O (Inna) *******/
 
 .hero {
-  margin-top: 14px;
-  margin-bottom: 69px;
+  margin-top: 60px;
+  margin-bottom: 91px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin-bottom: 42px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    margin-top: 0;
+    margin-bottom: 69px;
+  }
 }
 
 .container-hero {
-  background: #fefefe;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: #fefefe;
 }
 
-.hero-content {
-  width: 511px;
+@media only screen and (min-width: 1280px) {
+  .container-hero {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container.container-hero {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .container.container-hero {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container.container-hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .hero-title {
-  font-size: 48px;
-  line-height: 1.2;
+  max-width: 280px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
   margin-bottom: 28px;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 537px;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 44px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-title {
+    width: 502.417px;
+    font-size: 48px;
+    margin-top: 159px;
+    margin-bottom: 28px;
+  }
+}
+
 .hero-text {
-  line-height: 1.5;
-  margin-bottom: 40px;
+  max-width: 288px;
+  font-size: 14px;
+  line-height: 1.42;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    max-width: 336px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-text {
+    max-width: 511px;
+  }
 }
 
 .hero-button {
   margin-left: 0;
 }
 
-.hero-img {
-  flex-shrink: 0;
-  border-radius: 580px;
-  border: 26px solid #ffe550;
-  background-color: #fefefe;
-  margin-right: 14px;
+@media only screen and (min-width: 768px) {
+  .hero-button {
+    margin-bottom: 73px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-button {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .hero-img-wrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+  }
+}
+
+
+@media only screen and (max-width: 1280px) {
+  .hero-img-wrapper.position {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-img-wrapper {
+    margin: 14px 14px 14px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-img {
+    border-radius: 320px;
+    border: 14px solid #ffe550;
+    background: #fff;
+    flex-shrink: 0;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-img {
+    flex-shrink: 0;
+    border-radius: 580px;
+    border: 26px solid #ffe550;
+    background-color: #fefefe;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.hero-img:hover, .hero-img:focus, .hero-img:active {
+  border-color: #BBF330;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-arrow-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-arrow-btn {
+    max-width: 28px;
+    max-height: 34px;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+    cursor: pointer;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-arrow-btn {
+    display: none;
+  }
+}
+
+.arrow-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #2c2c2c;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.arrow-icon:hover,
+.arrow-icon:focus {
+  fill: #7eb101;
+}
+
+.arrow-icon:active {
+  fill: #2C2C2C;
+}
+
+.hero-arrow-btn:focus,
+.hero-arrow-btn:hover {
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: -8px;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: -8px;
 }
 
 /**********  H E R O - E N D   *******/
@@ -889,6 +1085,7 @@ main {
     top: 129px;
   }
 }
+
 /**********  M O D A L - E N D *************/
 
 
