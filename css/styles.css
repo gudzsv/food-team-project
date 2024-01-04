@@ -374,7 +374,6 @@ h3 {
   }
 }
 
-
 @media only screen and (max-width: 1280px) {
   .hero-img-wrapper.position {
     position: absolute;
@@ -415,8 +414,10 @@ h3 {
   }
 }
 
-.hero-img:hover, .hero-img:focus, .hero-img:active {
-  border-color: #BBF330;
+.hero-img:hover,
+.hero-img:focus,
+.hero-img:active {
+  border-color: #bbf330;
 }
 
 @media only screen and (max-width: 768px) {
@@ -464,12 +465,12 @@ h3 {
 }
 
 .arrow-icon:active {
-  fill: #2C2C2C;
+  fill: #2c2c2c;
 }
 
 .hero-arrow-btn:focus,
 .hero-arrow-btn:hover {
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
 }
 
 .left {
@@ -923,7 +924,6 @@ main {
 
 /********** F O O T E R - E N D *************/
 
-
 /**********  M O D A L (Serhii Hudzenko) *************/
 
 .modal-container {
@@ -1087,5 +1087,3 @@ main {
 }
 
 /**********  M O D A L - E N D *************/
-
-
