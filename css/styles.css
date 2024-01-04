@@ -597,6 +597,137 @@ h3 {
 
 /**********  S U B S C R I B E - E N D *************/
 
+/********** F O O T E R (Katia) *******/
+
+.footer {
+  background-image: url(../img/footer/Group\ 60.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+}
+
+.footer-container {
+  padding: 100px 0;
+}
+
+.footer-logo {
+  margin-right: 143px;
+}
+
+.footer-menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  margin-right: 320px;
+  padding-top: 18px;
+}
+
+.footer-link {
+  color: currentcolor;
+}
+
+.footer-rules-list {
+  display: flex;
+}
+
+.footer-rules-item {
+  margin-right: 20px;
+}
+
+.footer-rules-item:last-child {
+  margin-right: 0;
+}
+
+.rules-link {
+  color: #7eb101;
+  font-size: 12px;
+  text-decoration-line: underline;
+}
+
+.footer-subscribe {
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.sub-email {
+  display: inline-flex;
+  height: 42px;
+  width: 279px;
+  padding: 12px 61.5px 12px 12px;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid #ffe550;
+  background: #fefefe;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+.sub-email::placeholder {
+  color: #505050;
+  font-size: 12px;
+  flex: 1 0 0;
+}
+
+.sub-btn {
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  padding: 11px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid #7eb101;
+  background: #fff;
+  width: 103px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.sub-btn:hover,
+.sub-btn:focus {
+  border-color: #ffe450;
+}
+
+.footer-agree {
+  font-size: 12px;
+  max-width: 341px;
+  margin-top: 12px;
+}
+
+.footer-agree-link {
+  color: #7eb101;
+  text-decoration-line: underline;
+}
+
+.footer-protected {
+  font-size: 12px;
+  line-height: normal;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/********** F O O T E R - E N D *************/
+
+
 /**********  M O D A L (Serhii Hudzenko) *************/
 
 .modal-container {
@@ -758,5 +889,6 @@ h3 {
     top: 129px;
   }
 }
-
 /**********  M O D A L - E N D *************/
+
+
