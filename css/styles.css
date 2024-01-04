@@ -592,81 +592,162 @@ h3 {
     top: 129px;
   }
 }
-.favorites-gamburger{
+.favorites-gamburger {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-gamburger:hover,
 .favorites-gamburger:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-pasta{
+.favorites-pasta {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-pasta:hover,
 .favorites-gamburger:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-pizza{
+.favorites-pizza {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-pizza:hover,
 .favorites-pizza:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-chicken{
+.favorites-chicken {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-chicken:hover,
 .favorites-chicken:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-salad{
+.favorites-salad {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-salad:hover,
 .favorites-salad:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
 }
-.favorites-borshch{
+.favorites-borshch {
   width: 395px;
   height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
-border: 16px solid var(--Yellow-main, #FFE550);
-background: var(--White, #FEFEFE);
+  border: 16px solid var(--Yellow-main, #ffe550);
+  background: var(--White, #fefefe);
   margin: 40px 32;
 }
 .favorites-borshch:hover,
 .favorites-borshch:focus {
-border: 16px solid var(--Button-green, #BBF330);
+  border: 16px solid var(--Button-green, #bbf330);
+}
+
+/********** FOOTER *******/
+.footer {
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+}
+.footer-container {
+  padding: 100px 0;
+}
+
+.footer-logo {
+  margin-right: 143px;
+}
+.footer-menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  margin-right: 320px;
+}
+.footer-link {
+  color: currentcolor;
+}
+
+.footer-rules {
+}
+.footer-rules-list {
+}
+.footer-rules-item {
+}
+.rules-link {
+}
+.footer-subscribe {
+}
+.sub-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.footer-form {
+}
+
+.sub-email {
+  display: inline-flex;
+  height: 42px;
+  width: 279px;
+  padding: 12px 61.5px 12px 12px;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid #ffe550;
+  background: #fefefe;
+  margin-right: 13px;
+}
+.sub-email::placeholder {
+  color: #505050;
+  font-size: 12px;
+  flex: 1 0 0;
+}
+.sub-btn {
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  padding: 11px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid #7eb101;
+  background: #fff;
+}
+.sub-btn:hover,
+.sub-btn:focus {
+  border: 2px solid #ffe450;
+}
+
+.footer-agree {
+}
+.footer-agree-link {
+}
+.footer-protected {
+}
+.footer-wrap {
+  display: flex;
 }
