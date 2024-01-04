@@ -21,7 +21,7 @@
 
   <body>
     <!-- Header Nelli-->
-    <header class="header">
+    <header class="header hide">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html">
@@ -55,13 +55,35 @@
             <button class="header-btn hero-button" data-open-order-hero>Order Now</button>
           </div>
 
-          <img class="hero-img" src="./img/hero.png" alt="salad" width="528" height="528" />
+          <div class="hero-img-wrapper position">
+            <picture
+              ><source
+                media="(min-width: 1280px)"
+                srcset="./img/desckhero.png 1x, ./img/desckhero@2x.png 2x"
+                width="580" />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/tabhero.png 1x, ./img/tabhero@2x.png 2x"
+                width="320" />
+              <img class="hero-img" src="./img/desckhero.png" alt="salad" loading="lazy"
+            /></picture>
+            <button class="hero-arrow-btn left" aria-label="посмотреть следующий слайд">
+              <svg class="arrow-icon" width="34" height="28">
+                <use href="./img/icons-sna.svg#icon-left"></use>
+              </svg>
+            </button>
+            <button class="hero-arrow-btn right" aria-label="посмотреть следующий слайд">
+              <svg class="arrow-icon" width="34" height="28">
+                <use href="./img/icons-sna.svg#icon-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- Offerings Nataliia-->
 
-      <section class="offerings">
+      <section class="offerings hide">
         <div class="container container-offerings">
           <div class="offer-img">
             <span class="offer-img-bg">
@@ -113,7 +135,7 @@
 
       <!-- Favorites Sergiy M-->
 
-      <section class="favorites">
+      <section class="favorites hide">
         <div class="container">
           <h2 class="favorites-title">Some of Our Favorites</h2>
           <p class="favorites-text">Looking for something delicious?</p>
@@ -186,7 +208,7 @@
 
       <!-- Customers  Oleksandr-->
       <!-- Subscribe  Anna T-->
-      <section class="special-offer-section">
+      <section class="special-offer-section hide">
         <div class="container">
           <div class="special-offer">
             <h2 class="offer-title">Subscribe To Get Special Offers</h2>
@@ -219,7 +241,7 @@
     </main>
 
     <!-- Modal Serhii Hudzenko-->
-    <div id="backdrop" class="backdrop" data-backdrop>
+    <div id="backdrop" class="backdrop hide" data-backdrop>
       <div class="modal">
         <button class="close-button" aria-label="Model close button" data-close-modal>
           <svg class="close-button-icon">
