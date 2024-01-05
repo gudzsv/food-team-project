@@ -266,7 +266,7 @@ h3 {
 
 @media only screen and (min-width: 1280px) {
   .hero {
-    margin-top: 0;
+    margin-top: 14px;
     margin-bottom: 69px;
   }
 }
@@ -275,6 +275,11 @@ h3 {
   background-color: #fefefe;
 }
 
+@media only screen and (min-width: 768px) {
+  .container-hero {
+    min-height: 409px;
+  }
+}
 @media only screen and (min-width: 1280px) {
   .container-hero {
     display: flex;
@@ -350,7 +355,8 @@ h3 {
   }
 }
 
-.hero-button {
+.header-btn.hero-button {
+  display: block;
   margin-left: 0;
 }
 
@@ -371,6 +377,12 @@ h3 {
     position: relative;
     width: 320px;
     height: 320px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-img-wrapper.position {
+    display: none;
   }
 }
 
@@ -420,6 +432,10 @@ h3 {
   border-color: #bbf330;
 }
 
+.hero-arrow-btn {
+  padding: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .hero-arrow-btn {
     display: none;
@@ -428,9 +444,8 @@ h3 {
 
 @media only screen and (min-width: 768px) {
   .hero-arrow-btn {
-    max-width: 28px;
-    max-height: 34px;
-    padding: 0;
+    max-width: 34px;
+    max-height: 28px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
