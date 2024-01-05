@@ -138,12 +138,16 @@ h3 {
   .header-btn {
     display: block;
   }
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .header-container,
 .header-nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header-nav {
@@ -185,7 +189,8 @@ h3 {
 }
 
 .burger-btn:hover,
-.burger-btn:focus {
+.burger-btn:focus,
+.burger-btn:active {
   color: #ffe550;
 }
 
@@ -201,21 +206,22 @@ h3 {
 }
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
+  z-index: 1;
   right: 0;
   top: 0;
   width: 170px;
   height: 311px;
   background-color: #bbf330;
   box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
-  transform: translateX(100%);
+  transform: translateY(-100%);
   visibility: hidden;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
   visibility: visible;
 }
 
