@@ -600,13 +600,27 @@ h3 {
 
 /***********  F A V O R I T E S  (Sergiy M) ***********/
 
+.favorites {
+   margin-top: 120px;
+   margin-bottom: 100px;
+}
+
 .favorites-title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .favorites-text {
   text-align: center;
+  margin-bottom: 60px;
 }
+
+@media only screen and (min-width: 1280px) {
+  .favorites-text {
+    margin-bottom: 60px;
+  }
+}
+
 
 .benefits {
   display: flex;
@@ -617,19 +631,8 @@ h3 {
   list-style: none;
 }
 
-.benefits .favorites-item {
-  width: calc((100% - 32px * 2) / 3);
-}
-
-.container-fav {
-  flex-shrink: 0;
-  padding: 41 40 41 40px;
-  margin: 0 auto;
-}
 
 .favorites-gamburger {
-  width: 395px;
-  height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
   border: 16px solid var(--Yellow-main, #ffe550);
@@ -643,8 +646,6 @@ h3 {
 }
 
 .favorites-pasta {
-  width: 395px;
-  height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
   border: 16px solid var(--Yellow-main, #ffe550);
@@ -658,8 +659,6 @@ h3 {
 }
 
 .favorites-pizza {
-  width: 395px;
-  height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
   border: 16px solid var(--Yellow-main, #ffe550);
@@ -673,8 +672,6 @@ h3 {
 }
 
 .favorites-chicken {
-  width: 395px;
-  height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
   border: 16px solid var(--Yellow-main, #ffe550);
@@ -688,8 +685,6 @@ h3 {
 }
 
 .favorites-salad {
-  width: 395px;
-  height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
   border: 16px solid var(--Yellow-main, #ffe550);
@@ -703,8 +698,6 @@ h3 {
 }
 
 .favorites-borshch {
-  width: 395px;
-  height: 397px;
   flex-shrink: 0;
   border-radius: 197.5px;
   border: 16px solid var(--Yellow-main, #ffe550);
@@ -716,6 +709,21 @@ h3 {
 .favorites-borshch:focus {
   border: 16px solid var(--Button-green, #bbf330);
 }
+
+@media only screen and (min-width: 768px) {
+  .favorites-item {
+    width: calc((100% - 32px * 1) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .favorites-item {
+    width: calc((100% - 32px * 2) / 3);
+  }
+}
+
+
+
 
 /***********  F A V O R I T E S - END  ***********/
 
@@ -1073,7 +1081,7 @@ main {
 }
 
 /* Tablet */
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .modal {
     top: 98px;
     max-width: 458px;
