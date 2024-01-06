@@ -129,7 +129,7 @@ h3 {
   background-color: #ffe450;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .header-menu {
     display: flex;
     align-items: center;
@@ -147,9 +147,10 @@ h3 {
 .header-nav {
   display: flex;
   align-items: center;
+}
+.header-container {
   position: relative;
 }
-
 .header-nav {
   flex-basis: 100%;
 }
@@ -199,7 +200,7 @@ h3 {
   max-width: 28px;
 }
 
-@media screen and (min-width: 736px) {
+@media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
   }
