@@ -670,3 +670,22 @@ background: var(--White, #FEFEFE);
 .favorites-borshch:focus {
 border: 16px solid var(--Button-green, #BBF330);
 }
+.favorites-wrapper
+{
+  position: relative;
+  overflow: hidden;
+}
+@media only  screen and (min-width: 768px) {
+  .favorites-item
+  {
+    width: calc((100% - 32px *1) / 2);
+
+}
+}
+@media only  screen and (min-width: 1280px) {
+  .favorites-item
+  {
+  width: calc((100% - 24px *2) / 3);
+
+}
+}
