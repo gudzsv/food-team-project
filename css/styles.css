@@ -719,6 +719,56 @@ h3 {
 
 /***********  F A V O R I T E S - END  ***********/
 
+/**********  C U S T O M E R S *************/
+.customers{
+  max-width: 1277px;
+  background-color: #FFE550;
+
+
+  color: #2C2C2C;
+  padding-top: 176px;
+  padding-bottom: 176px;
+
+ margin: 0 auto;
+}
+.customers-title{
+max-width: 496px;
+text-align: start;
+font-size: 42px;
+font-weight: 700;
+font-style: normal;
+line-height: normal;
+letter-spacing: 0.02em;
+margin-left: 32px;
+}
+.customer-text{
+  padding-top: 20px;
+  padding-bottom: 33px;
+  margin-left: 32px;
+}
+.costomer-text-item{
+
+}
+.customers-block{
+  display: inline-flex;
+  gap: 132px;
+  justify-content: space-evenly;
+  background-color: #FEFEFE;
+}
+.customers-card{
+  display: block;
+
+}
+.stars{
+padding-top: 14.28px;
+padding-bottom: 28.56px;
+}
+.costomer-text-item{
+  text-align: center;
+}
+
+/**********  C U S T O M E R S  - END *************/
+
 /**********  S U B S C R I B E  (Anna T.) *************/
 
 .subscribe-section {
