@@ -721,13 +721,10 @@ h3 {
 
 /**********  C U S T O M E R S *************/
 .customers{
-  max-width: 1277px;
 background-color: #FFE550;
 padding-top: 176px;
 padding-bottom: 176px;
-
- margin: 0 auto;
- border: 1px solid red;
+margin: 101px auto 0 auto;
 }
 .customers-container {
 
@@ -752,6 +749,7 @@ padding-bottom: 33px;
 font-size: 18px;
 font-weight: 700;
 text-align: left;
+
 }
 
 .customers-block{
@@ -770,16 +768,30 @@ text-align: left;
 
 }
 .customers-say{
-  padding: 14px 14px 14px 17px;
+padding: 14px;
 }
 
 .stars{
-padding-bottom: 28.56px;
+padding-bottom: 29px;
 }
-.dude-block{
-  
+.avatar {
+display: flex;
+}
+.avatar-content{
+  padding-left: 16px;
+  gap: 2px;
+}
+.sumith{
+font-size: 14px;
+font-weight: 500;
+line-height: 1.5;
+}
+.dude{
+font-size: 14px;
+font-weight: 400;
+line-height: 1.5;
+}
 
-}
 
 /**********  C U S T O M E R S  - END *************/
 
