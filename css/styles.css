@@ -722,49 +722,63 @@ h3 {
 /**********  C U S T O M E R S *************/
 .customers{
   max-width: 1277px;
-  background-color: #FFE550;
-
-
-  color: #2C2C2C;
-  padding-top: 176px;
-  padding-bottom: 176px;
+background-color: #FFE550;
+padding-top: 176px;
+padding-bottom: 176px;
 
  margin: 0 auto;
+ border: 1px solid red;
 }
-.customers-title{
+.customers-container {
+
+  margin-left: 32px;
+}
+.customers-text-title {
 max-width: 496px;
 text-align: start;
 font-size: 42px;
 font-weight: 700;
-font-style: normal;
-line-height: normal;
 letter-spacing: 0.02em;
-margin-left: 32px;
-}
-.customer-text{
-  padding-top: 20px;
-  padding-bottom: 33px;
-  margin-left: 32px;
-}
-.costomer-text-item{
 
 }
+.customer-text{
+font-size: 16px;
+font-weight: 400;
+padding-top: 20px;
+padding-bottom: 33px;
+}
+
+.customer-text-item{
+font-size: 18px;
+font-weight: 700;
+text-align: left;
+}
+
 .customers-block{
   display: inline-flex;
-  gap: 132px;
+  margin-right: 32px;
+  gap: 139px;
   justify-content: space-evenly;
-  background-color: #FEFEFE;
+ 
 }
 .customers-card{
   display: block;
+  width: 501px;
+  height: 232px;
+  border-radius: 0px 30px 30px 30px;
+  background-color: #FEFEFE;
 
 }
+.customers-say{
+  padding: 14px 14px 14px 17px;
+}
+
 .stars{
-padding-top: 14.28px;
 padding-bottom: 28.56px;
 }
-.costomer-text-item{
-  text-align: center;
+.dude-block{
+  
+
 }
 
 /**********  C U S T O M E R S  - END *************/
