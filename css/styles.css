@@ -744,6 +744,7 @@ h3 {
     
   }
 }
+
 .subscribe-wrapper {
 }
 
@@ -754,8 +755,7 @@ h3 {
     position: relative;
   }
 
-
-    .subscribe-img {
+.subscribe-img {
   position: absolute;
   top: 0;
   right: 0;
@@ -799,12 +799,9 @@ h3 {
 @media only screen and (min-width: 768px) {
   .subscribe-title {
     min-width: 656px;
-    font-size: 42px;
-    
+    font-size: 42px;    
   }
 }
-
-
 
 .subscribe-text {
   max-width: 280px;
@@ -852,7 +849,6 @@ h3 {
   }
 }
 
-
 .subscribe-input:focus {
   outline: transparent;
   border-color: #7eb101;
@@ -872,6 +868,7 @@ h3 {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media only screen and (max-width: 767px) {
   .subscribe-btn {
     display: block;
