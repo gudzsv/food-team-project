@@ -918,6 +918,32 @@ h3 {
   border-color: #7eb101;
 }
 
+.mail-error {
+  display: none;
+}
+
+.mail-error.is-active > .subscribe-input:focus {
+  outline: transparent;
+  border-color: #ff705d;
+}
+.mail-error.is-active {
+  display: flex;
+  align-items: baseline;
+}
+
+.icon-Frame {
+}
+.error-text {
+  width: 216px;
+  margin-top: 4px;
+  margin-left: 4px;
+  color: #ff705d;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 15px */
+}
 .subscribe-btn {
   margin-left: 32px;
   height: 42px;
