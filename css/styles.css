@@ -601,8 +601,8 @@ h3 {
 /***********  F A V O R I T E S  (Sergiy M) ***********/
 
 .favorites {
-   margin-top: 120px;
-   margin-bottom: 100px;
+  margin-top: 120px;
+  margin-bottom: 100px;
 }
 
 .favorites-title {
@@ -621,7 +621,6 @@ h3 {
   }
 }
 
-
 .benefits {
   display: flex;
   flex-wrap: wrap;
@@ -630,7 +629,6 @@ h3 {
   margin-bottom: 8px;
   list-style: none;
 }
-
 
 .favorites-gamburger {
   flex-shrink: 0;
@@ -722,9 +720,6 @@ h3 {
   }
 }
 
-
-
-
 /***********  F A V O R I T E S - END  ***********/
 
 /**********  C U S T O M E R S *************/
@@ -809,51 +804,114 @@ line-height: 1.5;
 /**********  S U B S C R I B E  (Anna T.) *************/
 
 .subscribe-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  display: flex;
-  justify-content: center;
+  padding-top: 17px;
+  padding-bottom: 60px;
   background: #fefefe;
 }
 
-.subscribe-wrapper {
-  display: flex;
-  align-items: center;
+@media only screen and (min-width: 768px) {
+  .subscribe-section {
+    padding-top: 46px;
+    padding-bottom: 100px;
+  }
 }
 
-.subscribe-content {
-  display: block;
-  width: 639px;
+@media only screen and (min-width: 1280px) {
+  .subscribe-section {
+    padding-top: 176px;
+    padding-bottom: 200px;
+    
+  }
 }
+
+.subscribe-wrapper {
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscribe-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+.subscribe-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  }
+}
+
+.subscribe-img {
+  max-width: 280px;
+  margin-bottom: 17px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-img {
+    max-width: 281px;
+    margin-bottom: 20px;
+    margin-left: 423px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscribe-img {
+    max-width: 608px;
+   
+  }
+}
+
 
 .subscribe-title {
-  min-width: 656px;
-  height: 50px;
+  max-width: 280px;
+  height: 68px;
   color: #2c2c2c;
   font-family: Roboto;
-  font-size: 42px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
   margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe-title {
+    min-width: 656px;
+    font-size: 42px;    
+  }
+}
+
 .subscribe-text {
-  width: 500px;
+  max-width: 280px;
   height: 48px;
-  margin-bottom: 24px;
   color: #2c2c2c;
   font-family: Roboto;
-  font-size: 16px;
+  margin-bottom: 40px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe-text {
+    max-width: 520px;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscribe-text {
+    max-width: 532px;
+  }
+}
+
 .subscribe-input {
   height: 42px;
-  width: 395px;
-  padding: 12px 57px 12px 12px;
+  min-width: 279px;
+  padding: 12px 0 12px 12px;
   border-radius: 30px;
   border: 0.854px solid #ffe550;
   background-color: #fefefe;
@@ -861,6 +919,13 @@ line-height: 1.5;
   font-size: 12px;
   line-height: 150%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-input {
+    max-width: 395px;
+    padding: 12px 57px 12px 12px;
+  }
 }
 
 .subscribe-input:focus {
@@ -883,13 +948,28 @@ line-height: 1.5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (max-width: 767px) {
+  .subscribe-btn {
+    display: block;
+    margin-top: 20px;
+    margin-left: 176px;
+  }
+
+@media only screen and (min-width: 768px) {
+  .subscribe-btn {
+    margin-left: 22px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscribe-btn {
+    margin-left: 32px;
+  }
+}
+
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: #ffe450;
-}
-
-.subscribe-img {
-  width: 608px;
 }
 
 /**********  S U B S C R I B E - E N D *************/
