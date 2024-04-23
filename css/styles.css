@@ -823,53 +823,39 @@ h3 {
 /***********  F A V O R I T E S - END  ***********/
 
 /**********  C U S T O M E R S *************/
-.customers {
-  background-color: #ffe550;
-  padding-top: 176px;
-  padding-bottom: 176px;
-  margin: 101px auto 0 auto;
-}
 
-.customers-container {
-  /* margin-left: 32px; */
+.customers {
+  margin-top: 120px;
+  margin-bottom: 17px;
 }
 
 .customers-text-title {
-  max-width: 496px;
-  text-align: start;
-  font-size: 42px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
 }
 
 .customer-text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  padding-top: 20px;
-  padding-bottom: 33px;
 }
 
 .customer-text-item {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  text-align: left;
   margin-bottom: 40px;
 }
 
-.customers-block {
-  display: flex;
-  gap: 139px;
-}
-
 .customers-card {
-  padding: 14px;
-  max-width: 501px;
+  margin-top: 32px;
+  padding: 8px;
   border-radius: 0px 30px 30px 30px;
   background-color: #fefefe;
 }
 
 .stars {
-  padding-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .avatar {
@@ -897,62 +883,62 @@ h3 {
   line-height: 1.5;
 }
 
+@media only screen and (min-width: 768px) {
+  .customers-text-title {
+    font-size: 42px;
+  }
+  .customer-text {
+    font-size: 16px;
+  }
+  .customers-block {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .customers-card {
+    margin: 0;
+    padding: 12px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .customers {
+    background-color: #ffe550;
+    padding-top: 140px;
+    padding-bottom: 126px;
+    margin-top: 101px;
+    margin-bottom: 0;
+  }
+
+  .customer-text-item {
+    font-size: 18px;
+  }
+
+  .customers-block {
+    gap: 139px;
+  }
+
+  .customers-card {
+    max-width: 501px;
+    border-radius: 0px 30px 30px 30px;
+    background-color: #fefefe;
+  }
+}
+
 /**********  C U S T O M E R S  - END *************/
 
 /**********  S U B S C R I B E  (Anna T.) *************/
 
 .subscribe-section {
-  padding-top: 17px;
   padding-bottom: 60px;
   background: #fefefe;
 }
 
-@media only screen and (min-width: 768px) {
-  .subscribe-section {
-    padding-top: 46px;
-    padding-bottom: 100px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .subscribe-section {
-    padding-top: 176px;
-    padding-bottom: 200px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .subscribe-wrapper {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-
-  .subscribe-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-  }
-}
-
 .subscribe-img {
-  max-width: 280px;
+  max-width: 161px;
   margin-bottom: 17px;
-}
-
-@media only screen and (min-width: 768px) {
-  .subscribe-img {
-    max-width: 281px;
-    margin-bottom: 20px;
-    margin-left: 423px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .subscribe-img {
-    max-width: 608px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe-title {
@@ -966,14 +952,6 @@ h3 {
   line-height: 120%;
   margin-bottom: 20px;
 }
-
-@media only screen and (min-width: 768px) {
-  .subscribe-title {
-    min-width: 656px;
-    font-size: 42px;
-  }
-}
-
 .subscribe-text {
   max-width: 280px;
   height: 48px;
@@ -985,21 +963,6 @@ h3 {
   font-weight: 400;
   line-height: 150%;
 }
-
-@media only screen and (min-width: 768px) {
-  .subscribe-text {
-    max-width: 520px;
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .subscribe-text {
-    max-width: 532px;
-  }
-}
-
 .subscribe-input {
   height: 42px;
   min-width: 279px;
@@ -1011,13 +974,6 @@ h3 {
   font-size: 12px;
   line-height: 150%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media only screen and (min-width: 768px) {
-  .subscribe-input {
-    max-width: 395px;
-    padding: 12px 57px 12px 12px;
-  }
 }
 
 .subscribe-input:focus {
@@ -1038,8 +994,6 @@ h3 {
   align-items: baseline;
 }
 
-.icon-Frame {
-}
 .error-text {
   width: 216px;
   margin-top: 4px;
@@ -1065,6 +1019,66 @@ h3 {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #ffe450;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-section {
+    padding-top: 46px;
+    padding-bottom: 100px;
+  }
+  .subscribe-img {
+    max-width: 281px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .subscribe-title {
+    min-width: 656px;
+    font-size: 42px;
+  }
+  .subscribe-text {
+    max-width: 520px;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .subscribe-input {
+    min-width: 395px;
+    padding: 12px 57px 12px 12px;
+  }
+  .subscribe-btn {
+    margin-left: 22px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .subscribe-section {
+    padding-top: 176px;
+    padding-bottom: 200px;
+  }
+  .subscribe-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .subscribe-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+  .subscribe-img {
+    max-width: 608px;
+  }
+  .subscribe-text {
+    max-width: 532px;
+  }
+  .subscribe-btn {
+    margin-left: 32px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .subscribe-btn {
@@ -1074,78 +1088,38 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .subscribe-btn {
-    margin-left: 22px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .subscribe-btn {
-    margin-left: 32px;
-  }
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: #ffe450;
-}
-
 /**********  S U B S C R I B E - E N D *************/
 
 /********** F O O T E R (Katia) *******/
 
 .footer {
-  background-image: url(../img/footer/footer_background.jpg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../img/footer/Group\ 66.png);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
 }
-
-.footer-container {
-  padding: 100px 0;
-}
-
-.footer-logo {
-  margin-right: 143px;
-}
-
-.footer-menu {
-  display: inline-flex;
-  align-items: center;
-  gap: 28px;
-  margin-right: 320px;
-  padding-top: 18px;
-}
-
-.footer-link {
-  color: currentcolor;
-}
-
-.footer-rules-list {
+.footer-wrap {
   display: flex;
+  flex-wrap: wrap;
+  gap: 46px;
 }
-
-.footer-rules-item {
-  margin-right: 20px;
+.footer-menu {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
-.footer-rules-item:last-child {
-  margin-right: 0;
+.footer-link {
+  font-size: 14px;
+  color: #000;
 }
-
-.rules-link {
-  color: #7eb101;
-  font-size: 12px;
-  text-decoration-line: underline;
-}
-
 .sub-title {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 12px;
 }
-
 .sub-email {
   display: inline-flex;
   height: 42px;
@@ -1154,9 +1128,9 @@ h3 {
   align-items: center;
   border-radius: 30px;
   border: 0.854px solid #ffe550;
-  background: #fefefe;
-  margin-right: 13px;
+  background-color: #fefefe;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .sub-email::placeholder {
@@ -1184,40 +1158,155 @@ h3 {
 .sub-btn:focus {
   border-color: #ffe450;
 }
-
 .footer-agree {
-  font-size: 12px;
-  max-width: 341px;
-  margin-top: 12px;
+  font-size: 10px;
+  margin-top: 24px;
 }
 
 .footer-agree-link {
   color: #7eb101;
   text-decoration-line: underline;
 }
+.footer-rules-list {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+.footer-rules-item {
+  color: #7eb101;
+  text-decoration-line: underline;
+}
 
 .footer-protected {
-  font-size: 12px;
+  text-align: center;
+  font-size: 10px;
   line-height: normal;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    background-image: url(../img/footer/Frame\ 20.png);
+  }
+  .footer-wrap {
+    display: inline-flex;
+    gap: 46px;
+  }
+  .footer-menu {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-rules-list {
+    margin-top: 0;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  .footer-protected {
+    margin-top: 0;
+  }
+  .sub-email {
+    margin-right: 13px;
+  }
 }
 
-.footer-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url(../img/footer/footer_background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+  }
 
-.footer-wrapper {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-top: 80px;
-}
+  .footer-container {
+    padding: 100px 0;
+  }
 
-main {
-  flex-grow: 1;
-}
+  .footer-logo {
+    margin-right: 143px;
+  }
 
+  .footer-menu {
+    display: inline-flex;
+    gap: 28px;
+    margin-right: 320px;
+    padding-top: 18px;
+    font-size: 14px;
+  }
+  .footer-link {
+    color: currentcolor;
+  }
+
+  .footer-rules-list {
+    display: flex;
+  }
+
+  .footer-rules-item {
+    margin-right: 20px;
+  }
+
+  .footer-rules-item:last-child {
+    margin-right: 0;
+  }
+
+  .rules-link {
+    color: #7eb101;
+    font-size: 12px;
+    text-decoration-line: underline;
+  }
+
+  .sub-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .sub-email {
+    margin-right: 13px;
+  }
+
+  .footer-agree {
+    font-size: 12px;
+    max-width: 341px;
+    margin-top: 12px;
+  }
+
+  .footer-protected {
+    font-size: 12px;
+  }
+
+  .footer-wrap {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .footer-wrapper {
+    margin-top: 80px;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
 /********** F O O T E R - E N D *************/
 
 /**********  M O D A L (Serhii Hudzenko) *************/
